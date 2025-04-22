@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <% text.forEach(function(row) { %>
+        <div id="<%= row.id %>">
+            <p>"<%= row.text %>"</p>
+            <p>- <%= row.author %>
+            </p>
+            <p>id: <%= row.id %>
+            </p>
+            <button data-id="<%= row.id %>">Delete</button>
+        </div>
+        <hr>
+        <% }) %>
+
+            <script src="script.js"></script>
+
+</body>
+
+</html>

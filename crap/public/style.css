@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+br {
+    margin: 5px;
+}
+
+hr {
+    background-color: aliceblue;
+    height: 5px;
+    width: 1200px;
+    margin: 20px 0 20px 0
+}
