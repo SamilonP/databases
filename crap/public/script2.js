@@ -10,13 +10,16 @@ document.querySelector("form").addEventListener('submit', async (e) => {
         author: authorin.value
     }
     
-    const response = await fetch("/api/quote", {
-        method: "PUT",
+    const response = await fetch('/api/quote', {
+        method: 'PUT',
         headers: {
-          "Content-Type": "application/json",
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
-        // ...
-      });
-      
+    })
+    if (response.ok) {
+        console.log("sfkgjhtf")
+    } else {
+        console.log("WHAT")
+    }
 })
