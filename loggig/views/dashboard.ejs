@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        HEEEYYYYYYY <%= name %>
+    </h3>
+
+    <button onclick="logout()">Log out T!!</button>
+    <script>
+        function logout() {
+            fetch("/api/logout", {
+                method: "POST"
+            }).then(() => {
+                window.location.href = "/login"
+            })
+        }
+    </script>
+</body>
+
+</html>
